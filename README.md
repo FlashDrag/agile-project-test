@@ -17,16 +17,31 @@ A task is a small unit of work that can be completed in a short period of time. 
 - ### Sprints
 A sprint is a set period of time during which specific work needs to be completed. Sprints are usually two weeks long, but can be longer or shorter depending on the team’s needs. Sprints are used to break down work into smaller, more manageable chunks. The outcome of a Sprint is usually a working piece of software that will be added to the main “trunk” of the project. We can think of it like an single entry in a release changelog. You will probably set a milestone that will eventually represent a new release to be published, and that milestone will be made of several sprints that will add feature over feature to your final product.
 - ### Backlog
+The product backlog is a centralized and prioritized list, and the authoritative source that drives the Development Team’s work. The product backlog is the single source of requirements for any changes to be made to the product. The product backlog is never complete. As new features are identified, they are added to the product backlog. As the product is released, the product backlog is constantly updated to reflect changes in the product and changes in the market.
+
+The Product Owner is responsible for the product backlog and the team is responsible for delivering the value to the customer.
+The Product Owner should capture request that contributes to the value delivered to the customer. Thus the product owner should verify requests before adding them to the backlog. The product owner should also prioritize the backlog based on the value delivered to the customer. The backlog should be short enough to be completed in a sprint. The backlog should also be short enough to be completed in a reasonable amount of time.
+
+The Product Backlog is a dynamic document to respond to changes effectively. We add PBIs, remove them, break them down and re-prioritized them based on previous cycles’ feedback. Thus, the Backlog Refinement process is a repeated process throughout the lifecycle of the project. The purpose of the Product Backlog refinement process is to ensure that there is enough development-ready PBIs and orders in alignment with business priorities. Assigning tasks is not part of this.
+
+Product Backlog Items are mainly Epics, Defects and User Stories. Tasks are part of user stories. Recording a BPI on the backlog is not a guarantee that it’ll be delivered. It is an option that the Agile team might consider in delivering value to the customer rather than a commitment.
     - #### Sprint Backlog
     Essentially, the backlog is a collection of stories that have to be finished and tested before the end of the Sprint. At the beginning of each Sprint the team will decide which stories have to be pulled out from the Global Backlog. Moreover, the stories that belongs to a Sprint should be ordered by their priority and tagged with a number of points, representing the complexity of the story itself.
     - #### Global Backlog
     The global backlog is a prioritised list of stories that has not been scheduled to be completed. As new work comes in, it gets added to the global backlog and it possibly gets an assigned priority and maybe a label. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
 
-### Note:
-`Epics` are not the same as `Milestones`. `Milestones` are used to group issues into sprints. `Milestones` collectively manage and track progress on groups of issues and prioritise them. `Milestones` are issues grouped by a deadline or delivery time. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
 
 #### Issues order in the backlog
 The order should be based on business priorities. We should keep the high priority defects/bugs and user stories (ready for development) at the top, while epics should be placed at the bottom as they require decomposing into user stories. Usually, bugs have the highest priority, as they are the most critical issues that need to be fixed as soon as possible. The next priority is the user stories, which are the most important features that need to be developed. The last priority is the epics, which are the most important features that need to be developed, but they are not ready for development yet. They need to be broken down into user stories first.
+- ##### High priority
+On the top of the priority list, PBIs are mainly in the form of user stories and defects that are ready for development.
+- ##### Medium priority
+At a medium level of priority come the PBIs that are well understood but yet to be discussed with the development team detailed further such as brief User Stories.
+- ##### Low priority
+At the bottom of the priority list are the epics that need further discussion to be better understood and broken down.
+
+### Note:
+`Epics` are not the same as `Milestones`. `Milestones` are used to group issues into sprints. `Milestones` collectively manage and track progress on groups of issues and prioritise them. `Milestones` are issues grouped by a deadline or delivery time. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
 
 
 ## GitHub tools
