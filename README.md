@@ -2,12 +2,44 @@
 
 Agile methodology is a project management methodology that is used to manage software development projects. It is based on the iterative and incremental development of the project. It is a flexible methodology that allows the project to be adapted to the changes that may occur during the development of the project. In Agile, Quality and Time are fixed, but flexibility should be allowed with the Scope.
 
+## Table of Contents
+- [Agile Manifesto](#agile-manifesto)
+- [Agile Principles](#agile-principles)
+- [Agile concepts](#agile-concepts)
+    - [Epics](#epics)
+    - [Stories](#stories)
+        - [Story points and Velocity](#story-points-and-velocity)
+    - [Tasks](#tasks)
+    - [Sprints/Iterations](#sprintsiterations)
+        - [Sprint and story points](#sprint-and-story-points)
+    - [Backlog](#backlog)
+        - [Issues order in the backlog](#issues-order-in-the-backlog)
+    - [Timeboxing](#timeboxing)
+    - [MoSCoW prioritization](#moscow-prioritization)
+        - [Must have](#must-have)
+        - [Should have](#should-have)
+        - [Could have](#could-have)
+        - [Won't have](#wont-have)
+    - [Information radiators](#information-radiators)
+        - [Boards](#boards)
+        - [Burndown charts](#burndown-charts)
+- [GitHub tools](#github-tools)
+    - [Milestones](#milestones)
+    - [GitHub Project Boards](#github-project-boards)
+    - [Issues and Labels](#issues-and-labels)
+        - [MoSCoW labels](#moscow-labels)
+- [Credits](#credits)
+
+
+
+
+
 ## Agile Manifesto
-- ##### Individuals and interactions over processes and tools
-- ##### Working software over comprehensive documentation
+- Individuals and interactions over processes and tools
+- Working software over comprehensive documentation \
 (however, documentation should be developed whenever needed.)
-- ##### Customer collaboration over contract negotiation
-- ##### Responding to change over following a plan
+- Customer collaboration over contract negotiation
+- Responding to change over following a plan
 
 ## Agile Principles
 Agile methodology is based on the following software development principles:
@@ -32,20 +64,25 @@ We should strive to create the simplest software solution (that meets the users�
 
 ## Agile concepts
 - ### Epics
-An epic is a large body of work that can be broken down into a number of smaller stories,in our case `issues` in GitHub. Epics often encompass multiple teams, on multiple projects, and can even be tracked on multiple boards.
+An epic is a large body of work that can be broken down into a number of smaller stories,in our case `issues` in GitHub. Epics often encompass multiple teams, on multiple projects, and can even be tracked on multiple boards.\
 Epics are almost always delivered over a set of sprints. As a team learns more about an epic through development and customer feedback, user stories will be added and removed as necessary. That’s the key with agile epics: Scope is flexible, based on customer feedback and team cadence
 #### Note:
 `Epics` are not the same as `Milestones`. `Milestones` are used to group issues into sprints. `Milestones` collectively manage and track progress on groups of issues and prioritise them. `Milestones` are issues grouped by a deadline or delivery time. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
+
+[Back to top](#table-of-contents)
+
 - ### Stories
-A story is a description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. A story is a small unit of work that delivers some value to the customer.
+A story is a description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. A story is a small unit of work that delivers some value to the customer.\
 A story can be also broken down to its essential bits using a set of ordered Tasks that will eventually give the completion of the story itself as their final product. In our team we refer to this process as "breaking down a story".
 
 The difference betweeen `Epics` and `Stories` is that `Epics` are the big picture of the project, while `Stories` are the smaller pieces of the project that are needed to complete the `Epics`. `Epics` are usually broken down into `Stories` and `Stories` are broken down into `Tasks`. `Epics` are usually delivered over a set of `Sprints`. As a team learns more about an `Epic` through development and customer feedback, `Stories` will be added and removed as necessary. That’s the key with agile `Epics`: Scope is flexible, based on customer feedback and team cadence. Keep in mind, If you can break a user story further into multiple stories, then it should be considered as an epic and not a user story.
 
 #### Story points and Velocity
 _Story points_ are used to estimate the effort required to complete a user story. The effort is measured in story points, which are an abstract measure of effort.
-
+\
 _Velocity_ is the number of story points that a team can complete in a sprint. Velocity is a measure of the team’s ability to deliver work. It is calculated by adding up the story points of all the completed stories in a sprint. Velocity is used to estimate how long it will take to complete a project. The higher the velocity, the faster the team can complete the project. The lower the velocity, the longer the project will take to complete.
+
+[Back to top](#table-of-contents)
 
 - ### Tasks
 A task is a small unit of work that can be completed in a short period of time. A task is a concrete step that needs to be done to complete a story. A task is a small unit of work that delivers some value to the customer.
@@ -54,19 +91,21 @@ A sprint is a set period of time during which specific work needs to be complete
 #### Sprint and story points
 The team should estimate the effort required to complete each story in the sprint. User stories can be priorirised using MoSCoW, and then each story can be estimated using Fibonacci sequence (1, 2, 3, 5, 8, 13, 20, 40, 100). The total number of story points is the sprint capacity. Based on the sprint capacity, the team can decide how many stories they can complete in the sprint.
 
+[Back to top](#table-of-contents)
+
 - ### Backlog
 The product backlog is a centralized and prioritized list of PBIs(Product Backlog Items), and the authoritative source that drives the Development Team’s work. The product backlog is the single source of requirements for any changes to be made to the product. The product backlog is never complete. As new features are identified, they are added to the product backlog. As the product is released, the product backlog is constantly updated to reflect changes in the product and changes in the market.
-
+\
 The Product Owner is responsible for the product backlog and the team is responsible for delivering the value to the customer.
 The Product Owner should capture request that contributes to the value delivered to the customer. Thus the product owner should verify requests before adding them to the backlog. The product owner should also prioritize the backlog based on the value delivered to the customer. The backlog should be short enough to be completed in a sprint. The backlog should also be short enough to be completed in a reasonable amount of time.
-
+\
 The Product Backlog is a dynamic document to respond to changes effectively. We add PBIs, remove them, break them down and re-prioritized them based on previous cycles’ feedback. Thus, the Backlog Refinement process is a repeated process throughout the lifecycle of the project. The purpose of the Product Backlog refinement process is to ensure that there is enough development-ready PBIs and orders in alignment with business priorities. Assigning tasks is not part of this.
-
+\
 Product Backlog Items are mainly Epics, Defects and User Stories. Tasks are part of user stories. Recording a BPI on the backlog is not a guarantee that it’ll be delivered. It is an option that the Agile team might consider in delivering value to the customer rather than a commitment.
-    - #### Sprint Backlog
-    Essentially, the backlog is a collection of stories that have to be finished and tested before the end of the Sprint. At the beginning of each Sprint the team will decide which stories have to be pulled out from the Global Backlog. Moreover, the stories that belongs to a Sprint should be ordered by their priority and tagged with a number of points, representing the complexity of the story itself.
-    - #### Global Backlog
-    The global backlog is a prioritised list of stories that has not been scheduled to be completed. As new work comes in, it gets added to the global backlog and it possibly gets an assigned priority and maybe a label. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
+- #### Sprint Backlog
+Essentially, the backlog is a collection of stories that have to be finished and tested before the end of the Sprint. At the beginning of each Sprint the team will decide which stories have to be pulled out from the Global Backlog. Moreover, the stories that belongs to a Sprint should be ordered by their priority and tagged with a number of points, representing the complexity of the story itself.
+- #### Global Backlog
+The global backlog is a prioritised list of stories that has not been scheduled to be completed. As new work comes in, it gets added to the global backlog and it possibly gets an assigned priority and maybe a label. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
 
 #### Issues order in the backlog
 The order should be based on business priorities. We should keep the high priority defects/bugs and user stories (ready for development) at the top, while epics should be placed at the bottom as they require decomposing into user stories. Usually, bugs have the highest priority, as they are the most critical issues that need to be fixed as soon as possible. The next priority is the user stories, which are the most important features that need to be developed. The last priority is the epics, which are the most important features that need to be developed, but they are not ready for development yet. They need to be broken down into user stories first.
@@ -77,20 +116,24 @@ At a medium level of priority come the PBIs that are well understood but yet to 
 - ##### Low priority
 At the bottom of the priority list are the epics that need further discussion to be better understood and broken down.
 
+[Back to top](#table-of-contents)
+
 - ### Timeboxing
-Timeboxing means allocating a fixed perid, called a timebox, whitin which planned work or activities occur based on the assigned priority. Once the duration is over, the work that has not been completed is rescheduled, prioritised and moved to the next sprint (timebox). So, the timebox never exetended to accomodate the work initially planned for completion that timebox. An iteration is a timebox. The iteration duration is fixed and user stories that are not completed within a particular iteration are returned to the backlog for reprioritisation and rescheduling. If the team is not able to complete the work within the iteration, they should not extend the iteration time to complete the remaining user stories, nor compromise quality by trying to squeeze the remaining work into the current iteration. Whatever user stories remains should be returned  to the product backlog for refinement.
+Timeboxing means allocating a fixed perid, called a timebox, whitin which planned work or activities occur based on the assigned priority. Once the duration is over, the work that has not been completed is rescheduled, prioritised and moved to the next sprint (timebox). So, the timebox never exetended to accomodate the work initially planned for completion that timebox. An iteration is a timebox. The iteration duration is fixed and user stories that are not completed within a particular iteration are returned to the backlog for reprioritisation and rescheduling. If the team is not able to complete the work within the iteration, they should not extend the iteration time to complete the remaining user stories, nor compromise quality by trying to squeeze the remaining work into the current iteration. Whatever user stories remains should be returned  to the product backlog for refinement.\
 The timebox duration is not estimated based on the effort required to complete the work. But instead, based on a point in time where we want to stop and reflect.
 
 #### The timeboxing benefits:
 - It enables moving from plan-driven to value-driven development.
 - Defining and limiting the  amount of time dedicated to an activity
 encourages the team to get work done  immediately and avoid any non value-add effort,
-such as unnecessary documentation.
+such as unnecessary documentation.\
 Timeboxing helps the Agile team  stay focused on the time box’s goal and
 not get distracted, as they are aware  that the timebox can not be extended.
 
+[Back to top](#table-of-contents)
+
 - ### MoSCoW prioritization
-MoSCoW prioritization is a prioritization technique that helps to prioritize the product backlog items.
+MoSCoW prioritization is a prioritization technique that helps to prioritize the product backlog items.\
 MoSCoW prioritization is a representation of a User Story Criticality compared to other User Stories under consideration, this could be on the project as a whole or for a particular iteration.
 
 It is a way to prioritize the product backlog items based on the following criteria:
@@ -98,7 +141,7 @@ It is a way to prioritize the product backlog items based on the following crite
 Guaranteed to be delivered in the current sprint. These are the most important features that need to be developed. `Must-Have` PBIs are non-negotiable and are guaranteed to be delivered within the iteration or project. There is no point in releasing the  solution on the end date without these items as they are necessary for it to work. Core functionality, as well as legal, safety and security related PBIs, are usually prioritised under `Must Have`.
 
 - #### Should have
-If there is some workaround  to achieve the goal of PBI, even if it is manual and painful, then we should  consider it as `Should Have` or `Could Have`. Categorising a PBI as a Should Have or Could  Have does not mean it won’t be delivered. Simply delivery is not guaranteed  within the current iteration.
+If there is some workaround  to achieve the goal of PBI, even if it is manual and painful, then we should  consider it as `Should Have` or `Could Have`. Categorising a PBI as a Should Have or Could  Have does not mean it won’t be delivered. Simply delivery is not guaranteed  within the current iteration.\
 These are the features that are important and add significant value to the product but not critical to the success of the product or vital. They should be delivered in the current sprint if possible, but if not, they can be delivered in the next sprint. The product still functions; however, a `should have` adds significant value if they are included. Performance improvements, minor defects fixes, or new functionality are a `Should Have` as without them, the product still works.
 
 - #### Could have
@@ -106,7 +149,7 @@ These are the features that are important and add significant value to the produ
 
 - #### Won’t have
 'Won't have` means that the Agile team has agreed that the PBI wouldn't be delivered.
-- On the iteration level, it means that it won't be included in the current iteration, but it might be included later in  the project but in another iteration.
+- On the iteration level, it means that it won't be included in the current iteration, but it might be included later in  the project but in another iteration.\
 - At the project level, it means these PBIs won't make it to the deployed solution. We still record the `Won't have' PBIs  as they help clarify the project's scope and manage expectations. Some items will simply not make it into the deployed solution.
 
 Documenting the `Won't have` PBIs helps to clarify the project's scope and manage expectations. Some items will simply not make it into the next iteration, release or final deployed solution.
@@ -122,8 +165,11 @@ Also each PBI/user story is assigned a story point value, for example, `A` is 3 
 
 Now the development team has a prioritised list for PBIs to be completed within the iteration and can proceed with development. That prioritisation is relative to the remaining PBIs in the backlog. A PBI might be prioritised as `Won't have` in `iteration 1`, but later as `Must Have` in iteration two, if for example, it must be included in the release after `iteration 2`. Priority is always relative to the remaining PBIs.
 
+[Back to top](#table-of-contents)
+
 - ### Information radiators
-Information radiators are used to display the progress of a project, such as remaining user stories, current team velocity, user stories' status in the current sprint, the progress towards the next release, the count of open defects and so on. Information radiators usually show critical agile team information that reflects the work status and help the team better achieve their goal. Information radiators are real-time, updated, straightforward and understandable at a glance. Any team member can update the information presented on the Information Radiators. Information radiators usually show critical agile team information that reflects the work status and help the team better achieve their goal. The number of hours worked per team member is not critical information and should not be displayed on the information radiators.
+Information radiators are used to display the progress of a project, such as remaining user stories, current team velocity, user stories' status in the current sprint, the progress towards the next release, the count of open defects and so on. Information radiators usually show critical agile team information that reflects the work status and help the team better achieve their goal. Information radiators are real-time, updated, straightforward and understandable at a glance. Any team member can update the information presented on the Information Radiators. Information radiators usually show critical agile team information that reflects the work status and help the team better achieve their goal. The number of hours worked per team member is not critical information and should not be displayed on the information radiators.\
+
 Information radiators form can be:
 - Boards(Planning Boards, Kanban boards, Team Board, etc.)
 - Burndown charts
@@ -131,15 +177,15 @@ Information radiators form can be:
 - Impediment Lists
 
 #### Boards
-Boards are commonly used information radiators in the Agile community.
+Boards are commonly used information radiators in the Agile community.\
 The primary purpose of a board is to summarise team progress and the current status of the work progress for a particular iteration. In its simplest form, it comes with three primary columns `To Do`, `In Progress`, and `Done`. Usually, towards the end of a particular iteration, the Agile team starts planning for the next iteration, by agreeing on user stories to be included in the future iteration and their respective priorities.
 
 #### Burndown Charts
 The Burndown chart`s primary purpose is to show how quickly the development team burns through the user stories. The burndown chart shows the total effort remaining against the remaining time till the end of the iteration.
 
+[Back to top](#table-of-contents)
+
 ## GitHub tools
-- ### Scrum board and Task board
-The scrum board is a tool used to track the progress of a project. It is used to display the work that needs to be done, the work that is currently being done, and the work that has been completed.
 - ### Milestones
 Millstones are used to group issues into sprints. Milestones collectively manage and track progress on groups of issues and prioritase them. Milestones are issues grouped by a deadline or delivery time.
     - The issues can be the functionalities to be carried out for the next version and can be grouped in a milestone with the number of the next version and the release date.
@@ -155,25 +201,26 @@ Millstones are used to group issues into sprints. Milestones collectively manage
     - select the milestone
 
 - ### GitHub Project Boards
-GitHub `Projects` are used to group issues into a **project board**, track progress on groups of issues and prioritise them. We can create project boards for specific feature work, comprehensive roadmaps, or even software release checklists.
+GitHub `Projects` are used to group issues into a **project board**, track progress on groups of issues and prioritise them. We can create project boards for specific feature work, comprehensive roadmaps, or even software release checklists.\
+The scrum board is a tool used to track the progress of a project. It is used to display the work that needs to be done, the work that is currently being done, and the work that has been completed.
 
 #### CREATE Kanban Board with GitHub:
 1. Create a project board:
     - Add the title of the project board
     - Add the description of the project board
     - Add the columns of the project board
-        - Global Backlog
+        - Global Backlog\
         Includes all the user stories and tasks that are not yet assigned to a sprint.
-        - Sprint Backlog/To Do
-        Includes all the user stories and tasks that are assigned to the current sprint/milestone.
-        The user stories and tasks are prioritised in the sprint backlog based on the MoSCoW method.
-        The user stories that are not realised in the current sprint are moved to the global backlog.
-        - In Progress
+        - Sprint Backlog/To Do\
+        Includes all the user stories and tasks that are assigned to the current sprint/milestone.\
+        The user stories and tasks are prioritised in the sprint backlog based on the MoSCoW method.\
+        The user stories that are not realised in the current sprint are moved to the global backlog.\
+        - In Progress\
         Includes all the user stories and tasks that are currently being worked on.
-        - Done
+        - Done\
         Includes all the user stories and tasks that have been completed.
 2. Link the project board to the repository
-3. Add the issues/PBIs to the project board
+3. Add the issues/PBIs to the project board \
 Place them in order of effort, based on the story points assigned to each issue in descending order.
 
 - ### Issues and Labels
@@ -199,6 +246,8 @@ Scrum board, Task board
     - For an epic we only need to put the title and description, we do not need to add an assignee or add them to a project.
     - For a story we need to add the title, link to the epic to which it belongs, add the description, acceptance criteria and tasks, assign the person in charge of following up on this user story and add it to the Scrum board.
     - For a task we need to add the title, link to the story to which it belongs, add the description, assign the person in charge of carrying out this task and add it to the task board.
+
+[Back to top](#table-of-contents)
 
 
 ## Credits:
