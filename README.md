@@ -11,23 +11,23 @@ Agile methodology is a project management methodology that is used to manage sof
 
 ## Agile Principles
 Agile methodology is based on the following software development principles:
-- ##### Satisfy The Customer
+- Satisfy The Customer \
 Customer satisfaction by early and continuous delivery of valuable software.
-- ##### Welcome changing requirements, even in late development.
+- Welcome changing requirements, even in late development.\
 Our goal is to deliver a solution that creates real value for the customer. We value responding to changes over following the plan, Agile processes harness change for the customer's competitive advantage.
-- ##### Deliver working software frequently (weeks rather than months).
+- Deliver working software frequently (weeks rather than months).\
 Shorter timescale perferred. Most Agile teams use 2-4 cycles or iterations.
-- ##### Close, daily cooperation between business people and developers.
-- ##### Projects are built around motivated individuals, who should be trusted.
-- ##### Face-to-face conversation is the best form of communication (co-location).
-- ##### Working software is the primary measure of progress.
-- ##### Sustainable development, able to maintain a constant pace.
-- ##### Continuous attention to technical excellence and good design.
+- Close, daily cooperation between business people and developers.
+- Projects are built around motivated individuals, who should be trusted.
+- Face-to-face conversation is the best form of communication (co-location).
+- Working software is the primary measure of progress.
+- Sustainable development, able to maintain a constant pace.
+- Continuous attention to technical excellence and good design.\
 We should never compromise quality to meet project deadlines.
-- ##### Simplicity—the art of maximizing the amount of work not done—is essential.
+- Simplicity—the art of maximizing the amount of work not done—is essential.\
 We should strive to create the simplest software solution (that meets the users’ expectations) that helps facilitate the outcomes expected for the solution. We should not over-engineer or stuff it with features that end up unused. We should not  opt for an easy solution now instead of a better approach that would take longer or what is usually  referred to as “Technical Debt”, as it will result in costly rework later and it defeats the  purpose of creating value for users and customers.
-- ##### Best architectures, requirements, and designs emerge from self-organizing teams.
-- ##### Regularly, the team reflects on how to become more effective, and adjusts accordingly.
+- Best architectures, requirements, and designs emerge from self-organizing teams.
+- Regularly, the team reflects on how to become more effective, and adjusts accordingly.
 
 
 ## Agile concepts
@@ -49,11 +49,13 @@ _Velocity_ is the number of story points that a team can complete in a sprint. V
 
 - ### Tasks
 A task is a small unit of work that can be completed in a short period of time. A task is a concrete step that needs to be done to complete a story. A task is a small unit of work that delivers some value to the customer.
-- ### Sprints
+- ### Sprints/Iterations
 A sprint is a set period of time during which specific work needs to be completed. Sprints are usually two weeks long, but can be longer or shorter depending on the team’s needs. Sprints are used to break down work into smaller, more manageable chunks. The outcome of a Sprint is usually a working piece of software that will be added to the main "trunk" of the project. We can think of it like an single entry in a release changelog. You will probably set a milestone that will eventually represent a new release to be published, and that milestone will be made of several sprints that will add feature over feature to your final product.
+#### Sprint and story points
+The team should estimate the effort required to complete each story in the sprint. User stories can be priorirised using MoSCoW, and then each story can be estimated using Fibonacci sequence (1, 2, 3, 5, 8, 13, 20, 40, 100). The total number of story points is the sprint capacity. Based on the sprint capacity, the team can decide how many stories they can complete in the sprint.
 
 - ### Backlog
-The product backlog is a centralized and prioritized list of PBIs, and the authoritative source that drives the Development Team’s work. The product backlog is the single source of requirements for any changes to be made to the product. The product backlog is never complete. As new features are identified, they are added to the product backlog. As the product is released, the product backlog is constantly updated to reflect changes in the product and changes in the market.
+The product backlog is a centralized and prioritized list of PBIs(Product Backlog Items), and the authoritative source that drives the Development Team’s work. The product backlog is the single source of requirements for any changes to be made to the product. The product backlog is never complete. As new features are identified, they are added to the product backlog. As the product is released, the product backlog is constantly updated to reflect changes in the product and changes in the market.
 
 The Product Owner is responsible for the product backlog and the team is responsible for delivering the value to the customer.
 The Product Owner should capture request that contributes to the value delivered to the customer. Thus the product owner should verify requests before adding them to the backlog. The product owner should also prioritize the backlog based on the value delivered to the customer. The backlog should be short enough to be completed in a sprint. The backlog should also be short enough to be completed in a reasonable amount of time.
@@ -110,13 +112,30 @@ These are the features that are important and add significant value to the produ
 Documenting the `Won't have` PBIs helps to clarify the project's scope and manage expectations. Some items will simply not make it into the next iteration, release or final deployed solution.
 
 #### Note:
-It is not recommended that the percentage of `Must-Have` items exceeds 60% of the overall effort planned for the iteration.
+It is not recommended that the percentage of `Must-Have` items exceeds 60% of the overall effort planned for the iteration. The percentage can be estimated based on the **story points** assigned to each PBI. For example, if the team has a capacity of 10 story points per iteration, then the maximum number of `Must-Have` items should be 6 (60% of 10)
 
 Then, a reasonable contingency level - typically  around 20% should be `Could Have` effort. Creating a sensible pool of `Could-Haves` sets the correct expectations for the customer or product owner that these items may be delivered in their  entirety in a best-case scenario.
 ##### For example,
 the Product owner proposed to have 5 PBIs/user stories (A, B, C, D, E) in the current iteration backlog. Team Capacity is 10 User Story Points per iteration. As the current team capacity is ten story points per iteration, a maximum of 6 story points could be `Must Have`, and at least 2 Story Points should be `Could-have`, what's remaining are by default `Should-Have`. Based on our prioritised list, `A` & `B` might be assigned a `Must Have`, `C` is a `should have`, and `D` is a `Could have`, while `E` is a `won't have` in this iteration.
 
+Also each PBI/user story is assigned a story point value, for example, `A` is 3 story points, `B` is 2 story points, `C` is 1 story point, `D` is 2 story points, and `E` is 2 story points.
+
 Now the development team has a prioritised list for PBIs to be completed within the iteration and can proceed with development. That prioritisation is relative to the remaining PBIs in the backlog. A PBI might be prioritised as `Won't have` in `iteration 1`, but later as `Must Have` in iteration two, if for example, it must be included in the release after `iteration 2`. Priority is always relative to the remaining PBIs.
+
+- ### Information radiators
+Information radiators are used to display the progress of a project, such as remaining user stories, current team velocity, user stories' status in the current sprint, the progress towards the next release, the count of open defects and so on. Information radiators usually show critical agile team information that reflects the work status and help the team better achieve their goal. Information radiators are real-time, updated, straightforward and understandable at a glance. Any team member can update the information presented on the Information Radiators. Information radiators usually show critical agile team information that reflects the work status and help the team better achieve their goal. The number of hours worked per team member is not critical information and should not be displayed on the information radiators.
+Information radiators form can be:
+- Boards(Planning Boards, Kanban boards, Team Board, etc.)
+- Burndown charts
+- Traffic lights
+- Impediment Lists
+
+#### Boards
+Boards are commonly used information radiators in the Agile community.
+The primary purpose of a board is to summarise team progress and the current status of the work progress for a particular iteration. In its simplest form, it comes with three primary columns `To Do`, `In Progress`, and `Done`. Usually, towards the end of a particular iteration, the Agile team starts planning for the next iteration, by agreeing on user stories to be included in the future iteration and their respective priorities.
+
+#### Burndown Charts
+The Burndown chart`s primary purpose is to show how quickly the development team burns through the user stories. The burndown chart shows the total effort remaining against the remaining time till the end of the iteration.
 
 ## GitHub tools
 - ### Scrum board and Task board
@@ -135,16 +154,27 @@ Millstones are used to group issues into sprints. Milestones collectively manage
     - click on the milestone button
     - select the milestone
 
-- ### Projects
-After adding our epics, stories and tasks we can go to our boards and check that they have been added. In this way, at the beginning of Scrum, we can add all our epics and user stories to our project backlog.
-Projects are used to group issues into a project board. Projects are used to track progress on groups of issues and prioritise them. Projects are issues grouped by a project board.
+- ### GitHub Project Boards
+GitHub `Projects` are used to group issues into a **project board**, track progress on groups of issues and prioritise them. We can create project boards for specific feature work, comprehensive roadmaps, or even software release checklists.
 
-#### CREATE SCRUM BOARD AND TASK BOARD::
+#### CREATE Kanban Board with GitHub:
 1. Create a project board:
     - Add the title of the project board
     - Add the description of the project board
     - Add the columns of the project board
-2. Add the issues to the project board
+        - Global Backlog
+        Includes all the user stories and tasks that are not yet assigned to a sprint.
+        - Sprint Backlog/To Do
+        Includes all the user stories and tasks that are assigned to the current sprint/milestone.
+        The user stories and tasks are prioritised in the sprint backlog based on the MoSCoW method.
+        The user stories that are not realised in the current sprint are moved to the global backlog.
+        - In Progress
+        Includes all the user stories and tasks that are currently being worked on.
+        - Done
+        Includes all the user stories and tasks that have been completed.
+2. Link the project board to the repository
+3. Add the issues/PBIs to the project board
+Place them in order of effort, based on the story points assigned to each issue in descending order.
 
 - ### Issues and Labels
 Issues are the main element of GitHub. They can be used to track bugs, enhancements, tasks, or even user stories. Issues can be created by anyone (for public repositories), and are moderated by repository collaborators. Each issue contains its own discussion forum, can be assigned to a user, and can be labeled and milestoned.
