@@ -2,6 +2,33 @@
 
 Agile methodology is a project management methodology that is used to manage software development projects. It is based on the iterative and incremental development of the project. It is a flexible methodology that allows the project to be adapted to the changes that may occur during the development of the project. In Agile, Quality and Time are fixed, but flexibility should be allowed with the Scope.
 
+## Agile Manifesto
+- ##### Individuals and interactions over processes and tools
+- ##### Working software over comprehensive documentation
+(however, documentation should be developed whenever needed.)
+- ##### Customer collaboration over contract negotiation
+- ##### Responding to change over following a plan
+
+## Agile Principles
+Agile methodology is based on the following software development principles:
+- ##### Satisfy The Customer
+Customer satisfaction by early and continuous delivery of valuable software.
+- ##### Welcome changing requirements, even in late development.
+Our goal is to deliver a solution that creates real value for the customer. We value responding to changes over following the plan, Agile processes harness change for the customer's competitive advantage.
+- ##### Deliver working software frequently (weeks rather than months).
+Shorter timescale perferred. Most Agile teams use 2-4 cycles or iterations.
+- ##### Close, daily cooperation between business people and developers.
+- ##### Projects are built around motivated individuals, who should be trusted.
+- ##### Face-to-face conversation is the best form of communication (co-location).
+- ##### Working software is the primary measure of progress.
+- ##### Sustainable development, able to maintain a constant pace.
+- ##### Continuous attention to technical excellence and good design.
+We should never compromise quality to meet project deadlines.
+- ##### Simplicity—the art of maximizing the amount of work not done—is essential.
+We should strive to create the simplest software solution (that meets the users’ expectations) that helps facilitate the outcomes expected for the solution. We should not over-engineer or stuff it with features that end up unused. We should not  opt for an easy solution now instead of a better approach that would take longer or what is usually  referred to as “Technical Debt”, as it will result in costly rework later and it defeats the  purpose of creating value for users and customers.
+- ##### Best architectures, requirements, and designs emerge from self-organizing teams.
+- ##### Regularly, the team reflects on how to become more effective, and adjusts accordingly.
+
 
 ## Agile concepts
 - ### Epics
