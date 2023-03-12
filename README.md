@@ -7,6 +7,8 @@ Agile methodology is a project management methodology that is used to manage sof
 - ### Epics
 An epic is a large body of work that can be broken down into a number of smaller stories,in our case “issues” in GitHub. Epics often encompass multiple teams, on multiple projects, and can even be tracked on multiple boards.
 Epics are almost always delivered over a set of sprints. As a team learns more about an epic through development and customer feedback, user stories will be added and removed as necessary. That’s the key with agile epics: Scope is flexible, based on customer feedback and team cadence
+#### Note:
+`Epics` are not the same as `Milestones`. `Milestones` are used to group issues into sprints. `Milestones` collectively manage and track progress on groups of issues and prioritise them. `Milestones` are issues grouped by a deadline or delivery time. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
 - ### Stories
 A story is a description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. A story is a small unit of work that delivers some value to the customer.
 A story can be also broken down to its essential bits using a set of ordered Tasks that will eventually give the completion of the story itself as their final product. In our team we refer to this process as “breaking down a story”.
@@ -30,7 +32,6 @@ Product Backlog Items are mainly Epics, Defects and User Stories. Tasks are part
     - #### Global Backlog
     The global backlog is a prioritised list of stories that has not been scheduled to be completed. As new work comes in, it gets added to the global backlog and it possibly gets an assigned priority and maybe a label. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
 
-
 #### Issues order in the backlog
 The order should be based on business priorities. We should keep the high priority defects/bugs and user stories (ready for development) at the top, while epics should be placed at the bottom as they require decomposing into user stories. Usually, bugs have the highest priority, as they are the most critical issues that need to be fixed as soon as possible. The next priority is the user stories, which are the most important features that need to be developed. The last priority is the epics, which are the most important features that need to be developed, but they are not ready for development yet. They need to be broken down into user stories first.
 - ##### High priority
@@ -40,8 +41,16 @@ At a medium level of priority come the PBIs that are well understood but yet to 
 - ##### Low priority
 At the bottom of the priority list are the epics that need further discussion to be better understood and broken down.
 
-### Note:
-`Epics` are not the same as `Milestones`. `Milestones` are used to group issues into sprints. `Milestones` collectively manage and track progress on groups of issues and prioritise them. `Milestones` are issues grouped by a deadline or delivery time. In an Agile workflow, the development team pulls from the backlog as opposed to a manager pushing work onto the developers. The goal is to keep the backlog as small and as organized as possible.
+- ### Timeboxing
+Timeboxing means allocating a fixed perid, called a timebox, whitin which planned work or activities occur based on the assigned priority. Once the duration is over, the work that has not been completed is rescheduled, prioritised and moved to the next sprint (timebox). So  the timebox never exetended to accomodate the work initially planned for completion that timebox. An iteration is a timebox. The iteration duration is fixed and user stories that are not completed within a particular iteration are returned to the backlog for reprioritisation and rescheduling. If the team is not able to complete the work within the iteration, they should not extend the iteration time to complete the remaining user stories, nor compromise quality by trying to squeeze the remaining work into the current iteration. Whatever user stories remains should be returned  to the product backlog for refinement.
+
+The timeboxing benefits:
+- It enables moving from plan-driven to value-driven development.
+- Defining and limiting the  amount of time dedicated to an activity
+encourages the team to get work done  immediately and avoid any non value-add effort,
+such as unnecessary documentation.
+Timeboxing helps the Agile team  stay focused on the time box’s goal and
+not get distracted, as they are aware  that the timebox can not be extended.
 
 
 ## GitHub tools
